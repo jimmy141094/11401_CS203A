@@ -7,8 +7,8 @@
     This file contains the hash functions for integer and string keys.
 
    Development History:
-    - 2025/11/11: Initial implementation
-    - 2025/11/17: Complete a C language program using C++ methods.
+    - 2025/11/17: Initial implementation
+    - 2025/11/24: Complete a C language program using C++ methods.
 
    Developer: Chen-Yao-Xiang <jimmy141094@gmail.com>
  */

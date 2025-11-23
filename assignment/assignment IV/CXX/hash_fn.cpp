@@ -12,7 +12,8 @@
     making only ordinary changes within 30 cycles will still result
      in the same outcome. Therefore, we need to disrupt its pattern 
      by adding the first few digits and the remainders.
-    - 2025/11/24:
+    - 2025/11/24:Perform string hash calculations using a base-41 base-1000 
+    system to obtain a hash number, which is used for quick string comparison.
    Developer: Chen-Yao-Xiang <jimmy141094@gmail.com>
  */
 #include "hash_fn.hpp"
