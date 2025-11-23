@@ -8,20 +8,28 @@
 
    Development History:
     - 2025/11/11: Initial implementation
-    - 2025/11/17: Refactored to use hash_fn.h
+    - 2025/11/17: Complete a C language program using C++ methods.
 
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+   Developer: Chen-Yao-Xiang <jimmy141094@gmail.com>
  */
 
 #include "hash_fn.h"
 
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
+    unsigned int ukey = (unsigned int)key;
+    ukey *= 6813;
+    ukey += ukey / 3;
+    ukey += ukey % 7;
     return key % m;  // division method example
 }
 
 int myHashString(const char* str, int m) {
     unsigned long hash = 0;
-    // TODO: replace with your own design
+    const int p = 41;
+    size_t len = strlen(str);
+    for (size_t i = 0; i < len; i++) {
+        char c = str[i];
+        hash = (hash * p) + c;
+    }
     return (int)(hash % m); // basic division method
 }
